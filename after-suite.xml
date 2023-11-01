@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AfterSuite">
+  <test name="AfterSuite">
+    <classes>
+      <class name="com.test.suite.WebDriverSingleton"/>
+    </classes>
+  </test>
+</suite>
