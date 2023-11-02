@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- TestNG suite XML file for executing post-suite cleanup -->
 <suite name="AfterSuite">
+
+  <!-- AfterSuite Test -->
   <test name="AfterSuite">
+
     <classes>
-      <class name="com.test.suite.WebDriverSingleton"/>
+      <!-- Specify the class to be executed after the suite -->
+      <class name="Singleton.WebDriverSingleton"/>
     </classes>
   </test>
 </suite>

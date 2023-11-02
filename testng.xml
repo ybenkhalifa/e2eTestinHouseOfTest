@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestSuite">
-<test name="HomeTest">
-    <classes>
-      <class name="com.test.suite.HomePageTester"/>
-    </classes>
-  </test>
-  <test name="JoinUsTest">
-    <classes>
-      <class name="com.test.suite.JoinUsTester"/>
-    </classes>
-  </test>
-  <test name="ServiceTest">
-    <classes>
-      <class name="com.test.suite.ServiceTester"/>
-    </classes>
-  </test>
-    <test name="ContactTest">
-    <classes>
-      <class name="com.test.suite.ContactTester"/>
-    </classes>
-  </test>
-    <suite-files>
-    <suite-file path="after-suite.xml"/>
-  </suite-files>
+<suite name="HouseOfTestSuite">
+
+    <!-- Contact Page Test -->
+    <test name="ContactPageTest">
+        <classes>
+            <class name="com.test.suite.ContactTester"/>
+        </classes>
+    </test>
+
+    <!-- Home Page Test -->
+    <test name="HomePageTest">
+        <classes>
+            <class name="com.test.suite.HomePageTester"/>
+        </classes>
+    </test>
+
+    <!-- Join Us Page Test -->
+    <test name="JoinUsPageTest">
+        <classes>
+            <class name="com.test.suite.JoinUsTester"/>
+        </classes>
+    </test>
+
+    <!-- Service Page Test -->
+    <test name="ServicePageTest">
+        <classes>
+            <class name="com.test.suite.ServiceTester"/>
+        </classes>
+    </test>
+
 </suite>

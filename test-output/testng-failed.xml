@@ -6,11 +6,40 @@
       <class name="com.test.suite.JoinUsTester">
         <methods>
           <include name="testJoinUsPage"/>
-          <include name="testJobOffer"/>
           <include name="setUp"/>
+          <include name="scrollDownPageWithSpeed"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.test.suite.JoinUsTester -->
+      <class name="com.test.suite.ContactTester">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="scrollDownPageWithSpeed"/>
+          <include name="testContactPage"/>
+        </methods>
+      </class> <!-- com.test.suite.ContactTester -->
+      <class name="com.test.suite.WebDriverSingleton">
+        <methods>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- com.test.suite.WebDriverSingleton -->
+      <class name="com.test.suite.ServiceTester">
+        <methods>
+          <include name="setUp"/>
+          <include name="testServicePage"/>
+          <include name="tearDown"/>
+          <include name="scrollDownPageWithSpeed"/>
+        </methods>
+      </class> <!-- com.test.suite.ServiceTester -->
+      <class name="com.test.suite.HomePageTester">
+        <methods>
+          <include name="setUp"/>
+          <include name="scrollDownPageWithSpeed"/>
+          <include name="tearDown"/>
+          <include name="testHomePage"/>
+        </methods>
+      </class> <!-- com.test.suite.HomePageTester -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
