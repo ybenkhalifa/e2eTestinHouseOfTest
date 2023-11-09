@@ -1,3 +1,10 @@
+
+package test.java.Singleton;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterSuite;
 /**
  * This class is responsible for managing a singleton instance of the WebDriver for Selenium tests.
  * It ensures that only one WebDriver instance is created and shared among test classes, 
@@ -19,18 +26,13 @@
  * Version: 1.0
  * Since: 2023-11-02
  */
-package Singleton;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterSuite;
 
 public class WebDriverSingleton {
     private static WebDriver driver;
 
     // Private constructor to prevent external instantiation
-    private WebDriverSingleton() {
+    public WebDriverSingleton() {
     }
 
     /**

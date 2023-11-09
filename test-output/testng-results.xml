@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-09T13:39:08 CET" name="Default suite" finished-at="2023-11-09T13:39:17 CET" duration-ms="8738">
+    <groups>
+    </groups>
+    <test started-at="2023-11-09T13:39:08 CET" name="Default test" finished-at="2023-11-09T13:39:17 CET" duration-ms="8738">
+      <class name="test.java.Singleton.WebDriverSingleton">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:test.java.Singleton.WebDriverSingleton@692f203f]" started-at="2023-11-09T13:39:17 CET" name="closeDriver" finished-at="2023-11-09T13:39:17 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- test.java.Singleton.WebDriverSingleton -->
+      <class name="test.java.com.test.suite.JoinUsTester">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.com.test.suite.JoinUsTester@41d477ed]" started-at="2023-11-09T13:39:11 CET" name="setUp" finished-at="2023-11-09T13:39:12 CET" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scrollDownPageWithSpeed()[pri:0, instance:test.java.com.test.suite.JoinUsTester@41d477ed]" started-at="2023-11-09T13:39:12 CET" name="scrollDownPageWithSpeed" finished-at="2023-11-09T13:39:12 CET" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollDownPageWithSpeed -->
+        <test-method signature="testJoinUsPage()[pri:0, instance:test.java.com.test.suite.JoinUsTester@41d477ed]" started-at="2023-11-09T13:39:12 CET" name="testJoinUsPage" finished-at="2023-11-09T13:39:13 CET" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJoinUsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.java.com.test.suite.JoinUsTester@41d477ed]" started-at="2023-11-09T13:39:17 CET" name="tearDown" finished-at="2023-11-09T13:39:17 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.test.suite.JoinUsTester -->
+      <class name="test.java.com.test.suite.ContactTester">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.com.test.suite.ContactTester@3590fc5b]" started-at="2023-11-09T13:39:08 CET" name="setUp" finished-at="2023-11-09T13:39:11 CET" duration-ms="2676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scrollDownPageWithSpeed()[pri:0, instance:test.java.com.test.suite.ContactTester@3590fc5b]" started-at="2023-11-09T13:39:13 CET" name="scrollDownPageWithSpeed" finished-at="2023-11-09T13:39:14 CET" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollDownPageWithSpeed -->
+        <test-method signature="testContactPage()[pri:0, instance:test.java.com.test.suite.ContactTester@3590fc5b]" started-at="2023-11-09T13:39:14 CET" name="testContactPage" finished-at="2023-11-09T13:39:15 CET" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.java.com.test.suite.ContactTester@3590fc5b]" started-at="2023-11-09T13:39:17 CET" name="tearDown" finished-at="2023-11-09T13:39:17 CET" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.test.suite.ContactTester -->
+      <class name="test.java.com.test.suite.ServiceTester">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.com.test.suite.ServiceTester@397fbdb]" started-at="2023-11-09T13:39:12 CET" name="setUp" finished-at="2023-11-09T13:39:12 CET" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scrollDownPageWithSpeed()[pri:0, instance:test.java.com.test.suite.ServiceTester@397fbdb]" started-at="2023-11-09T13:39:15 CET" name="scrollDownPageWithSpeed" finished-at="2023-11-09T13:39:15 CET" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollDownPageWithSpeed -->
+        <test-method signature="testServicePage()[pri:0, instance:test.java.com.test.suite.ServiceTester@397fbdb]" started-at="2023-11-09T13:39:15 CET" name="testServicePage" finished-at="2023-11-09T13:39:16 CET" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServicePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.java.com.test.suite.ServiceTester@397fbdb]" started-at="2023-11-09T13:39:17 CET" name="tearDown" finished-at="2023-11-09T13:39:17 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.test.suite.ServiceTester -->
+      <class name="test.java.com.test.suite.HomePageTester">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.com.test.suite.HomePageTester@33d512c1]" started-at="2023-11-09T13:39:11 CET" name="setUp" finished-at="2023-11-09T13:39:11 CET" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="scrollDownPageWithSpeed()[pri:0, instance:test.java.com.test.suite.HomePageTester@33d512c1]" started-at="2023-11-09T13:39:16 CET" name="scrollDownPageWithSpeed" finished-at="2023-11-09T13:39:17 CET" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollDownPageWithSpeed -->
+        <test-method signature="testHomePage()[pri:0, instance:test.java.com.test.suite.HomePageTester@33d512c1]" started-at="2023-11-09T13:39:17 CET" name="testHomePage" finished-at="2023-11-09T13:39:17 CET" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.java.com.test.suite.HomePageTester@33d512c1]" started-at="2023-11-09T13:39:17 CET" name="tearDown" finished-at="2023-11-09T13:39:17 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.java.com.test.suite.HomePageTester -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

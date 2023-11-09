@@ -1,11 +1,11 @@
 /**
  * This class contains a series of test methods for verifying the functionality and behavior 
- * of the services page on the House of Test website. It utilizes Selenium WebDriver for browser 
+ * of the "Join Us" page on the House of Test website. It utilizes Selenium WebDriver for browser 
  * automation and TestNG for test execution.
  * 
  * The class includes methods to perform the following tasks:
  * 1. Set up the WebDriver instance and navigate to the base URL before running tests.
- * 2. Test the service page by locating and printing the content of a specific element on the page.
+ * 2. Test the "Join Us" page by locating and printing the content of a specific element on the page.
  * 3. Scroll down the page at a specified speed using a custom utility class.
  * 4. Close the WebDriver instance after the test suite has completed.
  * 
@@ -17,7 +17,7 @@
  * @version 1.0
  * @since 2023-11-02
  */
-package com.test.suite;
+package test.java.com.test.suite;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -29,44 +29,34 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.test.utils.ScrollUtils;
+import test.java.com.test.utils.ScrollUtils;
 
-import Singleton.WebDriverSingleton;
+import test.java.Singleton.WebDriverSingleton;
 
-public class ServiceTester {
+public class JoinUsTester {
     private WebDriver driver;
     private String baseUrl = "https://www.houseoftest.ch/";
     private String serviceTitleLocator = "h1.display";
-    private String itemSegment = "services";
-    private String loggingMsg = "****************Our locator is working well! Here is the extracted content: ";
+    private String itemSegment = "join-us";
+    private String loggingMsg = "****************Our locator  is working well! here is the extracted content:   ";
     private ScrollUtils scrollUtils;
-
-    /**
-     * Sets up the WebDriver instance and navigates to the base URL before running tests.
-     */
     @BeforeTest
     public void setUp() {
         // Get the WebDriver instance from the Singleton class
         driver = WebDriverSingleton.getDriver();
-        scrollUtils = new ScrollUtils(driver);
+
         // Navigate to the page
         driver.get(baseUrl);
+        scrollUtils = new ScrollUtils(driver);
     }
 
-    /**
-     * Tests the service page by locating and printing the content of a specific element on the page.
-     */
     @Test
-    public void testServicePage() {
+    public void testJoinUsPage() {
         driver.get(baseUrl + itemSegment);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement cssElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(serviceTitleLocator)));
-        System.out.print(loggingMsg + cssElement.getText() + " \n\n");
+        System.out.print(loggingMsg + cssElement.getText() + " ***\n\n");
     }
-    
-    /**
-     * Scrolls down the page at a specified speed.
-     */
     @Test
     public void scrollDownPageWithSpeed() {
         int scrollSpeed = 200; // Increase or decrease this value for faster or slower scrolling
@@ -75,9 +65,7 @@ public class ServiceTester {
         scrollUtils.scrollDownWithSpeed(scrollSpeed, totalScrollDistance);
     }
 
-    /**
-     * Closes the WebDriver instance after the test suite has completed.
-     */
+
     @AfterTest
     public void tearDown() {
         // Close the browser using the instance's closeDriver() method

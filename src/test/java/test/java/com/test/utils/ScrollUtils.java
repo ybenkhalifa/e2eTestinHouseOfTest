@@ -14,7 +14,7 @@
  * Version: 1.0
  * Since: 2023-11-02
  */
-package com.test.utils;
+package test.java.com.test.utils;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

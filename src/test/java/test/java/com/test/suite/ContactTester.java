@@ -1,11 +1,11 @@
 /**
  * This class contains a series of test methods for verifying the functionality and behavior 
- * of the home page of the House of Test website. It utilizes Selenium WebDriver for browser 
+ * of the contact page on the House of Test website. It utilizes Selenium WebDriver for browser 
  * automation and TestNG for test execution.
  * 
  * The class includes methods to perform the following tasks:
  * 1. Set up the WebDriver instance and navigate to the base URL before running tests.
- * 2. Test the home page by verifying the presence of a specific element containing the "Rebels" text.
+ * 2. Test the contact page by locating and printing the content of a specific element on the page.
  * 3. Scroll down the page at a specified speed using a custom utility class.
  * 4. Close the WebDriver instance after the test suite has completed.
  * 
@@ -17,24 +17,28 @@
  * @version 1.0
  * @since 2023-11-02
  */
-package com.test.suite;
+package test.java.com.test.suite;
 
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.test.utils.ScrollUtils;
+import test.java.com.test.utils.ScrollUtils;
 
-import Singleton.WebDriverSingleton;
+import test.java.Singleton.WebDriverSingleton;
 
-public class HomePageTester {
-
+public class ContactTester {
     private WebDriver driver;
     private String baseUrl = "https://www.houseoftest.ch/";
+    private String serviceTitleLocator = "h1.display";
+    private String itemSegment = "contact";
+    private String loggingMsg = "****************Our locator is working well! Here is the extracted content: ";
     private ScrollUtils scrollUtils;
 
     /**
@@ -50,15 +54,14 @@ public class HomePageTester {
     }
 
     /**
-     * Tests the home page by verifying the presence of a specific element containing the "Rebels" text.
+     * Tests the contact page by locating and printing the content of a specific element on the page.
      */
     @Test
-    public void testHomePage() {
-        // Find the element containing the "Rebels" text
-        WebElement welcomeElement = driver.findElement(By.xpath("//*[contains(text(),'Rebels')]"));
-
-        // Assert that the "Rebels" text is present on the page
-        Assert.assertTrue(welcomeElement.isDisplayed(), "The home page is not displayed");
+    public void testContactPage() {
+        driver.get(baseUrl + itemSegment);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement cssElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(serviceTitleLocator)));
+        System.out.print(loggingMsg + cssElement.getText() + " ***\n\n");
     }
 
     /**
